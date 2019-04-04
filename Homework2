@@ -1,0 +1,46 @@
+Q1\ Install Openssh in ubuntu using apt
+A1\ $sudo apt install openssh
+
+Q2\ update the apt List
+A2\ $sudo apt-get update
+
+Q3\ install VLC player
+A3\ $sudo apt-get install vlcplayer 
+
+Q4\ change your DNS to 8.8.8.8 and 8.8.4.4
+A4\ $sudo apt install openresolv 
+    $sudo apt install resolvconf
+    $sudo mousepad /etc/network/interfaces
+     type inside the mousepad text editing: 
+     dns-nameserver 8.8.8.8
+     dns-nameserver 8.8.4.4
+     save the changes
+    $resolvconf -u
+    $mousepad /etc/network/interfaces
+    
+
+Q5\ Secure the SSH ( put all what you know in the configuration file)
+
+
+Q6\ How can you find out how much memory Linux is using?
+A6\ $df -ih
+    or
+    #gparted
+
+Q7\ What is a typical size for a swap partition under a Linux system?
+
+
+Q8\ what is the version of BASH in your system?
+A8\ $printf "%s\n" $BASH_VERSION
+    or 
+    $bash --version
+
+Q9\write Hello world program in Bash
+A9\ $echo "Hello World"
+
+Q10\ Run the Program 
+A10\ $mousepad hello.sh
+     Typing inside the hello.sh 
+     echo "Hello World"
+     $chmod +x hello.sh
+     $./hello.sh
